@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle color-variable-picker'
+      'command': 'color-variable-picker:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'color-variable-picker'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'color-variable-picker:toggle'
+        }
+      ]
+    ]
+  }
+]
